@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				width: 800px;
+				height: 500px;
+				background: orange;
+				margin: 50px auto;
+				overflow: hidden;
+			}
+			ul li{
+				list-style: none;
+				width: 150px;
+				height: 30px;
+				background: red;
+				margin: 100px 0;
+			}
+			ul li:first-child{
+				transform: translate(100px,50px);
+				
+				/*transform: translateX(100px);
+				transform: translateY(50px);*/
+			}
+			ul li:nth-child(2){
+				/*1表示值不变  一个值表示两个X Y 都变*/
+				/*transform: scale(.5);*/
+				transform: scale(.5,2);
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			1、位移的值分写形式，后面的会覆盖前面的值
+		-->
+		<ul>
+			<li>位移</li>
+			<li>缩放</li>
+			<li>旋转</li>
+		</ul>
+	</body>
+</html>

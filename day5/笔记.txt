@@ -1,0 +1,77 @@
+一、css常用属性
+
+width
+
+height
+
+color
+
+font-size
+
+border    border-left/right/top/bottom
+
+background-color
+
+font-weight:600-900;   加粗
+
+margin 外边距   *{margin:0;padding:0;}清除内外边距  margin:0 auto;让标签水平居中
+
+margin-left/right/top/bottom
+
+padding内边距
+
+list-style:none;清除列表符号
+
+text-decoration:none;清除超链接的下划线
+
+text-align:center;让文本居中
+
+line-height  当行高等于容器高度时，文本可以垂直居中
+
+float:left/right/none; 浮动
+
+border:none;清除边框
+
+background-image:url(); 背景图片，括号里面放的是路径
+
+background-repeat:no-repeat; 背景图不平铺
+
+background-position:数值+px、left、right、top、bottom、center     背景图位置   一次只能加两个值  值1表示水平  值2表示垂直
+
+二、什么是css层叠？（面试）
+
+css层叠指的是样式表的优先级，当发生冲突的时候以优先级高的为准
+
+三、伪类选择器如果联合使用时，要注意顺序  L-V-H-A
+
+hover使用的最多，hover还可以给其他标签使用
+
+四、浮动 float:left/right/none;   
+
+作用：让竖着的东西横着来
+
+浮动使用原则：要浮动一起浮动
+
+浮动有哪些问题或叫规律？
+
+1、什么是标准流？就是网页默认的排版顺序
+
+2、什么是浮动流？就是加了浮动属性的标签。浮动流是漂浮在标准流之上的，原先位置会发生改变
+
+3、文本环绕现象
+
+问题？
+
+1、两个div，第一个设了浮动，第二个没有设置，这个浮动的元素会把没有浮动标签给覆盖
+
+2、两个div，第一个没有设置浮动，第二个设置了浮动，这个div的位置保持不变
+
+3、两个div，都设置了浮动，当宽度不够时，第二个会被挤到下一行
+
+
+
+
+
+
+
+

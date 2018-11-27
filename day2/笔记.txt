@@ -1,0 +1,48 @@
+一、做的比想的多  思维误区（想的比做的多）
+
+二、服务器（租用空间）作用：放置资源，存储数据和处理数据
+
+    概念：服务器是一台超级电脑，比普通电脑配置，性能高（不知多少倍），一天24小时不能断电
+
+前端：制作网站   前端开发需要哪些语言？html、css、JavaScript（js）
+
+后台（后端）和服务器打交道，还有数据库  后台开发需要哪些语言?java、php、c#、Python...
+
+三、首页必须命名为index.html 不错写成shouye.html  abc.html  因为服务器只识别index.html
+
+
+注释：帮助我们理解代码意思，便于开发减少沟通成本
+
+html注释 语法:<!--代码意思-->  穷逼VIP就是免费送的那种
+
+编码 GBK（可以给日文、韩文、繁体字）  gb2312（中国使用）
+
+四、html属性
+
+（h1-h6）标题标记  html属性 align="left/center/right"  
+
+列表里面没有公共列表（记忆）
+
+五、常用颜色单词
+
+color  颜色
+
+red
+
+yellow
+
+green
+
+orange
+
+blue
+
+black
+
+white
+
+pink
+
+purple
+
+六、像素px 是一个网页常用固定单位  212px

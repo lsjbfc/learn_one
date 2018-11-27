@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				text-align: center;
+				margin: 20px 0;
+				color: red;
+			}
+			.box{
+				width: 800px;
+				height: 400px;
+				margin: 20px auto;
+				border: 1px solid red;
+				display: flex;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+			}
+			.box div:first-child{
+				background: orangered;
+				flex-basis: 350px;
+			}
+			.box div:nth-child(2){
+				background: greenyellow;
+				flex-grow: 3;
+				
+			}
+			.box div:last-child{
+				background: orchid;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<p>flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）</p>
+		<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

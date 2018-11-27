@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.nav{
+				width: 465px;
+				height: 35px;
+				background: #eeeeee;
+				margin: 50px auto;
+			}
+			/*子选择器 只对子元素起作用*/
+			.nav>li{
+				list-style: none;
+				float: left;
+				font-size: 14px;
+				height: 35px;
+				line-height: 35px;
+				padding: 0 33px;
+			}
+			.nav>li>a{
+				text-decoration: none;
+				color: black;
+			}
+			.nav>.li2{
+				position: relative;
+			}
+			.nav>.li2 ul li{
+				list-style: none;
+			}
+			.nav>.li2 ul li a{
+				text-decoration: none;
+				color: black;
+			}
+			.nav>.li2 ul{
+				width: 122px;
+				height: 103px;
+				background: #EEEEEE;
+				position: absolute;
+				left: 0;
+				top: 35px;
+				text-align: center;
+				display: none;
+			}
+			
+			.nav>.li2:hover{
+				background: #333333;
+			}
+			.nav>.li2:hover a{
+				text-decoration: underline;
+				color: white;
+			}
+			.nav>.li2:hover ul{
+				display: block;
+			}
+			.nav>.li2:hover ul li a{
+				/*background: red;*/
+				text-decoration: none;
+				color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="nav">
+			<li><a href="#">首页</a></li>
+			<li class="li2">
+				<a href="#">产品中心</a>
+				<ul>
+					<li><a href="#">产品1</a></li>
+					<li><a href="#">产品2</a></li>
+					<li><a href="#">产品3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">客服服务</a></li>
+			<li><a href="#">联系我们</a></li>
+		</ul>
+	</body>
+</html>

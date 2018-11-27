@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+				margin: 15px;
+				float: left;
+			}
+			div:first-child{
+				background: radial-gradient(blue 10%, red 20%, yellow 5%);
+			}
+			div:nth-child(2){
+				width: 400px;
+				background: radial-gradient(ellipse,red,yellow,green);
+			}
+			div:nth-child(3){
+				width: 400px;
+				background: radial-gradient(circle,red,yellow,green);
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>

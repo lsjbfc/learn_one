@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				text-align: center;
+				margin: 20px 0;
+				color: red;
+			}
+			.box{
+				width: 800px;
+				height: 400px;
+				margin: 20px auto;
+				border: 1px solid red;
+				display: flex;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+			}
+			.box div:first-child{
+				background: orangered;
+				flex-grow: 1;
+			}
+			.box div:nth-child(2){
+				background: greenyellow;
+				flex-grow: 2;
+			}
+			.box div:last-child{
+				background: orchid;
+				flex-grow: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<p>flex-grow 这个就是flex的原型  flex是几个值的缩写形式</p>
+		<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

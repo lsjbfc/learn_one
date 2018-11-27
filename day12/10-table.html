@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*colgroup:first-child{
+				background: red;
+			}
+			colgroup:nth-child(2){
+				background: orange;
+				
+			}
+			colgroup:nth-child(3){
+				background: pink;
+				
+			}*/
+			col:first-child{
+				background: red;
+				border-right:10px solid blue ;
+			}
+			col:nth-child(2){
+				background: pink;
+				border-right:10px solid blue ;
+			}
+			col:nth-child(3){
+				background: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<table  cellspacing="0" cellpadding="0" align="center" width="500" height="300" rules="groups">
+			<!--<colgroup span="1"></colgroup>
+			<colgroup span="1"></colgroup>
+			<colgroup span="1"></colgroup>-->
+			<col span="1" />
+			<col span="1" />
+			<col span="1" />
+			<thead>
+				<tr>
+					<td>2</td>
+					<td>2</td>
+					<td>2</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>2</td>
+					<td>2</td>
+					<td>2</td>
+				</tr>
+				
+			</tbody>
+			<tr>
+					<td>2</td>
+					<td>2</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>2</td>
+					<td>2</td>
+				</tr>
+		</table>
+	</body>
+</html>

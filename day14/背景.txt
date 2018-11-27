@@ -1,0 +1,40 @@
+什么是背景尺寸属性
+背景尺寸属性是CSS3中新增的一个属性, 专门用于设置背景图片大小.
+语法：background-size:200px 100px;（第一个参数是宽度，第二个参数是高度）
+      background-size:100% 80%;（也可以写百分比）
+      background-size:cover;
+情况：1.默认 2.具体情况 3.百分比 4.宽度等比拉伸 5.高度等比拉伸
+6.cover 7.contain
+cover含义:	
+专业属语：把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+背景图像的某些部分也许无法显示在背景定位区域中。
+
+1.告诉系统图片需要等比拉伸
+2.告诉系统图片需要拉伸到宽度和高度都填满元素
+
+
+background-size:contain;
+专业术语：把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。
+1.告诉系统图片需要等比拉伸
+
+
+
+指定了背景图像的位置区域。
+
+background-origin: padding-box;
+告诉系统背景图片从什么区域开始显示,
+默认情况下就是从padding区域开始显示
+ 
+border-box背景图像相对于边框盒来定位。 
+content-box背景图像相对于内容框来定位。
+
+
+CSS3中background-clip背景剪裁属性是从指定位置开始绘制。
+background-clip属性 padding-box border-box content-box
+
+
+background: url("images/animal1.png") no-repeat left top,url("images/animal2.png")；
+多张背景图片之间用逗号隔开即可
+            注意点:
+            先添加的背景图片会盖住后添加的背景图片
+            建议在编写多重背景时拆开编写

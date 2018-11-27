@@ -1,0 +1,76 @@
+1、站点里面文件夹的作用要知道
+
+html----放子页面的（除了index.html外，其他网页）
+
+font----放iconfont图标的（字体文件）
+
+img或images---图片资源
+
+js----js文件
+
+css---css文件
+
+2、开发要求：结构、表现、行为三者分离
+
+比如：css代码要求尽量放在css文件里面
+
+3、使用公共样式表（base.css）
+
+base.css文件----网页中的重置样式、网页头部、网页尾部基本上主页面和子页面都一样
+
+不使用公共样式的话，重复代码比较多
+
+4、重置样式--自己总结下
+
+5、SEO优化相关的知识补充
+
+a、<meta name="keywords" content="" />向搜索引擎说明你的网页的关键词
+
+b、<meta name="description"  content=""/>告诉搜索引擎你的站点的主要内容
+
+c、网页关键字和主要内容的描述，尽量简洁明了，通俗易懂
+
+d、img 属性：alt title  以后开发的时候加上，就算为空也要加上
+
+a超链接上面最好添加title属性和属性值
+
+6、文件和标签命名要规范，尽量使用英文单词
+
+7、三、样式重置-----规则设置
+
+1、以新浪为例：
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+img{display: block;}
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; } 
+body { color:#333; font:12px/20px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
+a { color:#666; text-decoration:none; }
+a:visited { color:#666; }
+a:hover, a:active, a:focus { color:#ff8400; text-decoration:underline; }
+
+2、腾讯
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px "宋体","Arial Narrow",HELVETICA;background:#fff;}
+a{color:#172c45;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal}
+li{list-style:none}
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+.ind{text-indent:2em} 
+.ind10{text-indent:10px;}
+.noborder{border:0;}
+
+
+3、搜狐
+body{font-family:"\5B8B\4F53","Arial Narrow",HELVETICA;text-align:center;margin:0 auto;padding:0;background:#FFF;font-size:12px;color:#333;} 
+body > div{text-align:center;margin-right:auto;margin-left:auto;} 
+div,form,ul,ol,li,span,p{margin:0;padding:0;border:0;}
+img,a img{border:0;margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;}
+ul,ol,li{list-style:none}
+table,td,input{font-size:12px;padding:0} /* 默认链接颜色 */ 
+a{outline-style:none;color:#333;text-decoration:none}
+a:hover{color:#c00;text-decoration:underline;}

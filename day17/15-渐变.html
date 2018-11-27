@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 200px;
+				border: 1px solid red;
+				float: left;
+				margin: 15px;
+			}
+			div:first-child{
+				background: -webkit-radial-gradient(60% 40%,closest-side,blue,yellow,orange,green);
+			}
+			div:nth-child(2){
+				background: -webkit-radial-gradient(60% 40%,farthest-side,blue,yellow,orange,green);
+			}
+			div:nth-child(3){
+				background: -webkit-radial-gradient(60% 40%,closest-corner,blue,yellow,orange,green);
+			}
+			div:nth-child(4){
+				background: -webkit-radial-gradient(60% 40%,farthest-corner,blue,yellow,orange,green);
+			}
+		</style>
+	</head>
+	<body>
+		 <!--
+			 closest-side：最近边； 
+			 farthest-side：最远边； 
+			 closest-corner：最近角； 
+			 farthest-corner：最远角;
+		 -->
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+</html>

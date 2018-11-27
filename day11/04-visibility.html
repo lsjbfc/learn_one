@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			/*中间不能被隔开*/
+			div:first-child{
+				background: red;
+				visibility: hidden;
+			}
+			/*div:nth-child(2){
+				background-color: red;
+			}*/
+			div:last-child{
+				background: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+	</body>
+</html>

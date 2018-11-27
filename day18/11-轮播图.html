@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 882px;
+				height: 86px;
+				border: 1px solid red;
+				margin: 50px auto;
+				overflow: hidden;
+			}
+			ul{
+				width: 1764px;
+				height: 86px;
+				animation: play 5s infinite linear;
+			}
+			ul li{
+				list-style: none;
+				float: left;
+			}
+			ul:hover li img{
+				opacity: .5;
+			}
+			ul li:hover img{
+				opacity: 1;
+			}
+			ul:hover{
+				animation-play-state: paused;
+			}
+			@keyframes play{
+				from{
+					margin-left: 0;
+				}
+				to{
+					margin-left: -882px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li><img src="images/1.jpg"/></li>
+				<li><img src="images/2.jpg"/></li>
+				<li><img src="images/3.jpg"/></li>
+				<li><img src="images/4.jpg"/></li>
+				<li><img src="images/5.jpg"/></li>
+				<li><img src="images/6.jpg"/></li>
+				<li><img src="images/7.jpg"/></li>
+				<li><img src="images/1.jpg"/></li>
+				<li><img src="images/2.jpg"/></li>
+				<li><img src="images/3.jpg"/></li>
+				<li><img src="images/4.jpg"/></li>
+				<li><img src="images/5.jpg"/></li>
+				<li><img src="images/6.jpg"/></li>
+				<li><img src="images/7.jpg"/></li>
+			</ul>
+		</div>
+	</body>
+</html>

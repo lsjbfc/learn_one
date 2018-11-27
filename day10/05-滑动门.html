@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	/*div{
+		width:220px;
+		height:220px;
+		border:1px solid red;
+		margin:50px auto;
+		background:url(images/img01.jpg);
+		}*/
+	ul{
+		width:800px;
+		height:100px;
+		background:#fff1c0;
+		margin:50px auto;
+		}
+	ul li{
+		list-style:none;
+		float:left;
+		font-size:12px;
+		margin-right:1px;
+		}
+	ul li a{
+		text-decoration:none;
+		color:black;
+		/*转块的原因是：背景图不占位置*/
+		display:block;
+		background:url(images/left.gif);
+		height:27px;
+		}
+	ul li a span{
+		display:block;
+		background:url(images/right.gif) no-repeat right 0;
+		padding:0 20px;
+		height:27px;
+		line-height:27px;
+		}
+	ul .li1 a{
+		background-position:0 -27px;
+		}
+	ul .li1 a span{
+		background-position:right -27px;
+		}
+	ul .li2:hover a{
+		background-position:0 -57px;
+		color:white
+		}
+	ul .li2:hover a span{
+		background-position:right -57px;
+		}
+	ul .li3:hover a{
+		background-position:0 -87px;
+		color:white
+		}
+	ul .li3:hover a span{
+		background-position:right -87px;
+		}
+</style>
+</head>
+
+<body>
+<!--
+	1、a里面加span的作用是为了拼接圆角
+    2、背景图显示原则
+    3、平铺问题
+-->
+<ul>
+	<li class="li1"><a href="#"><span>首页</span></a></li>
+    <li class="li2"><a href="#"><span>数码通讯</span></a></li>
+    <li class="li3"><a href="#"><span>房产</span></a></li>
+</ul>
+
+<div></div>
+</body>
+</html>

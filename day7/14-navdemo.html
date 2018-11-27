@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	ul li{list-style:none;}
+	a{text-decoration:none;}
+	
+	.nav1{
+		width:800px;
+		height:40px;
+		background:#9a0000;
+		margin:50px auto;
+		}
+	.nav1 li{
+		float:left;
+		height:40px;
+		line-height:40px;
+		padding:0 25px;
+		}
+	.nav1 li a{color:white;}
+	.nav1 li:hover{
+		background:url(images/nav1_bg.png);
+		}
+	.nav1 li:hover a{
+		color:red;
+		background:url(images/s.jpg) no-repeat center top;
+		}
+		
+	.nav2{
+		width:800px;
+		height:38px;
+		background:url(images/nav2_bg.png);
+		margin:50px auto;
+		}
+	.nav2 li{
+		float:left;
+		height:38px;
+		line-height:30px;
+		font-size:14px;
+		padding:0 25px;
+		}
+	.nav2 li a{color:black;}
+	.nav2 li:hover{
+		background:#fce012;
+		height:48px;
+		margin-top:-12px;
+		line-height:45px;
+		}
+	.nav2 li:hover a{color:white;}
+	.nav2 .ml{margin-left:10px;}
+	
+	/*这是nav一种新的布局方式 display:none;隐藏  display:block;表示显示*/
+	.nav3{
+		width:800px;
+		height:20px;
+		border-bottom:8px solid #e1481c;
+		margin:50px auto;
+		}
+	.nav3 li{
+		background:#dfdfdf;
+		float:left;
+		width:80px;
+		font-size:12px;
+		text-align:center;
+		height:20px;
+		line-height:20px;
+		margin-right:1px;
+		}
+	.nav3 .ml{margin-left:10px;}
+	.nav3 li a{color:black;}
+	.nav3 li a i{
+		font-style:normal;
+		display:none;
+		}
+	.nav3 li:hover a span{display:none;}
+	.nav3 li:hover a i{display:block;}
+</style>
+</head>
+
+<body>
+<ul class="nav1">
+	<li><a href="#">home</a></li>
+    <li><a href="#">about us</a></li>
+    <li><a href="#">home</a></li>
+    <li><a href="#">about us</a></li>
+    <li><a href="#">home</a></li>
+    <li><a href="#">about us</a></li>
+    <li><a href="#">home</a></li>
+</ul>
+
+<ul class="nav2">
+	<li class="ml"><a href="#">sample</a></li>
+    <li><a href="#">sample</a></li>
+    <li><a href="#">sample</a></li>
+   	<li><a href="#">sample</a></li>
+   	<li><a href="#">sample</a></li>
+</ul>
+
+<ul class="nav3">
+	<li class="ml"><a href="#"><span>home</span><i>首页</i></a></li>
+    <li><a href="#"><span>home</span><i>首页</i></a></li>
+    <li><a href="#"><span>home</span><i>首页</i></a></li>
+   	<li><a href="#"><span>home</span><i>首页</i></a></li>
+   	<li><a href="#"><span>home</span><i>首页</i></a></li>
+</ul>
+</body>
+</html>

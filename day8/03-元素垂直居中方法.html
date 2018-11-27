@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+	.box{
+		width:300px;
+		height:300px;
+		border:1px solid red;
+		margin:50px auto;
+		/*text-align:center;属性除了让文本水平居中外，还可以让行内块元素水平居中*/
+		text-align:center;
+		}
+	.box div{
+		width:200px;
+		height:200px;
+		background:red;
+		display:inline-block;
+		/*单独使用基本上没有效果*/
+		vertical-align:middle;
+		}
+	/*span在这里就相当于一个标尺的作用，做参考*/
+	.box span{
+		width:0;
+		height:100%;
+		/*background:yellow;*/
+		display:inline-block;
+		vertical-align:middle;
+		}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<div></div><span></span>
+</div>
+</body>
+</html>

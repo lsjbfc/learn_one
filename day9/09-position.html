@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	.nav{
+		width:100%;
+		height:60px;
+		background:orange;
+		position:fixed;
+		top:0;
+		}
+	.content{
+		height:800px;
+		background:yellow;
+		/*改变标准流的位置会影响它*/
+		margin-top:60px;
+		}
+</style>
+</head>
+
+<body>
+<!--
+	这种布局方式一定要记下来
+    
+    问题：给标准流的元素设置margin值，会影响定位流
+    
+    解决方法：利用top、left、right、bottom值来对它进行定位处理
+-->
+<div class="nav"></div>
+<div class="content">时间过得真快，天气也热了，春天适合耍朋友和踏青</div>
+</body>
+</html>

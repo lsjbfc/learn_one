@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.header{
+				height: 26px;
+				background: #eeeeee;
+			}
+			.header div{
+				width: 1196px;
+				height: 26px;
+				/*border: 1px solid red;*/
+				margin: 0 auto;
+			}
+			.header div ul{
+				width: 756px;
+				height: 16px;
+				/*background: orange;*/
+				float: right;
+				margin-top: 5px;
+				font-size: 12px;
+			}
+			.header div ul li{
+				list-style: none;
+				float: left;
+				height: 16px;
+				line-height: 16px;
+				border-right:1px solid #d5d5d5 ;
+			}
+			.header div ul li a{
+				text-decoration: none;
+				color: black;
+			}
+			.header div ul li:first-child{
+				padding: 0 16px;
+			}
+			.header div ul li:first-child a{
+				color: #fe6400;
+			}
+			.header div ul li:first-child a:nth-child(1){
+				margin-right: 13px;
+			}
+			.header div ul li:nth-child(2){
+				padding-left:15px;
+				padding-right: 26px;
+				background: url(images/s.png) no-repeat 83px center;
+			}
+			.header div ul li:nth-child(3){
+				padding-left:30px;
+				background: url(images/phone.png) no-repeat 15px center;
+			}
+			.header div ul li:nth-child(3) a{
+				padding-right: 26px;
+				background: url(images/s.png) no-repeat 70px center;
+			}
+			
+			.logo{
+				width: 1196px;
+				height: 78px;
+				border: 1px solid red;
+				margin: 0 auto;
+			}
+			.logo .logo_left{
+				width: 427px;
+				height: 58px;
+				border: 1px solid;
+				float: left;
+			}
+			/*h1有利于SEO*/
+			.logo .logo_left h1 a{
+				width: 427px;
+				height: 58px;
+				display: block;
+				background: url(images/logo.jpg) no-repeat center center;
+			}
+			.logo .logo_left h1 a span{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div>
+				<ul>
+					<li>
+						<a href="#">欢迎登陆名鞋库</a>
+						<a href="#">免费注册</a>
+					</li>
+					<li>
+						<a href="#">我的名鞋库</a>
+						<!--<span></span>-->
+					</li>
+					<li><a href="#">手机名鞋库</a></li>
+					<li><a href="#">收藏名鞋库</a></li>
+					<li><a href="#">名鞋库客服</a></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="logo">
+			<!--
+				标准写法
+				常规写法
+				div a img或背景图
+			-->
+			<div class="logo_left">
+				<h1>
+					<a href="#"><span>名鞋库</span></a>
+				</h1>
+			</div>
+			<div class="logo_middle"></div>
+			<div class="logo_right">
+				<a href="#">
+					购物车<span>0</span>件
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

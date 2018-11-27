@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+				margin: 15px;
+				float: left;
+			}
+			div:first-child{
+				background: linear-gradient(to left, red, yellow);
+			}
+			div:nth-child(2){
+				background: linear-gradient(to right, red, yellow);
+			}
+			/*默认值*/
+			div:nth-child(3){
+				background: linear-gradient(to bottom, red, yellow);
+			}
+			div:nth-child(4){
+				background: linear-gradient(to top, red, yellow);
+			}
+			
+			div:nth-child(5){
+				background: linear-gradient(to left top, red, green);
+			}
+			div:nth-child(6){
+				background: linear-gradient(to left bottom, blue, purple);
+			}
+			div:nth-child(7){
+				background: linear-gradient(to right bottom, yellow, green);
+			}
+			div:nth-child(8){
+				background: linear-gradient(to right top, yellow, green);
+			}
+			div:last-child{
+				background: linear-gradient(0deg, black, pink);
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		
+		<div></div>
+		
+	</body>
+</html>

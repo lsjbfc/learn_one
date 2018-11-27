@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*重置样式*/
+
+*{margin:0;padding:0;}
+ul li{list-style:none;}
+a{text-decoration:none;}
+
+/*网页头部*/
+.header{
+	width:1000px;
+	height:100px;
+	/*border:1px solid red;*/
+	margin:0 auto;
+	}
+.header .logo{
+	width:244px;
+	height:22px;
+	/*border:1px solid red;*/
+	float:left;
+	margin-left:20px;
+	margin-top:40px;
+	}
+.header form{
+	width:227px;
+	height:28px;
+	border:1px solid #e5e5e5;
+	float:right;
+	margin-top:40px;
+	margin-right:20px;
+	}
+/*
+1、input标签带有默认的边框 border:none;
+
+2、input标签默认有间距  float:left;
+
+*/
+.header form .txt{
+	width:197px;
+	height:28px;
+	font-size:12px;
+	color:#7d7d7d;
+	}
+.header form .btn{
+	width:30px;
+	height:28px;
+	background-image:url(../images/search.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	}
+.header form input{
+	border:none;
+	float:left;
+	background-color:#f1f1f1;
+	}
+	
+/*导航*/
+.nav{
+	width:1000px;
+	height:60px;
+	background-color:#2e2e2e;
+	margin:0 auto;
+	}
+.nav ul{
+	width:965px;
+	height:60px;
+	/*background:yellow;*/
+	margin-left:25px;
+	}
+.nav ul li{
+	float:left;
+	font-size:12px;
+	height:60px;
+	line-height:60px;
+	border-right:1px solid #4a4a4a;
+	text-align:center;
+	width:119px;
+	}
+.nav ul .noborder{
+	border:none;
+	width:125px;
+	}
+.nav ul li a{color:white;}
+
+/*广告*/
+.banner{
+	/*border:1px solid red;*/
+	width:1000px;
+	height:463px;
+	margin:0 auto;
+	}
+

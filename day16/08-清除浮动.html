@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				border: 1px solid red;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+				float: left;
+			}
+			.box div:nth-child(1){
+				background: red;
+			}
+			.box div:nth-child(2){
+				background: yellow;
+			}
+			.box div:nth-child(3){
+				background: blue;
+			}
+			.box::after{
+				display: block;
+				content: "";
+				visibility: hidden;
+				height: 0;
+				clear: both;
+			}
+			.box{
+				zoom: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

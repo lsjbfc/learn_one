@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			p{
+				text-align: center;
+				color: red;
+				margin: 10px 0;
+			}
+			.box{
+				width: 800px;
+				height: 400px;
+				border: 1px solid red;
+				margin: 20px auto;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+			}
+			.box div:first-child{
+				background: red;
+			}
+			.box div:nth-child(2){
+				background: yellow;
+			}
+			.box div:nth-child(3){
+				background: orange;
+			}
+			
+			.box1 div{
+				float: left;
+				margin: 0 33px;
+				margin-top: 120px;
+			}
+			
+			.box2{
+				/*定义一个弹性盒*/
+				display: flex;
+				/*兼容写法*/
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				
+				justify-content: space-around;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<p>老方法</p>
+		<div class="box box1">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		
+		<p>弹性盒布局</p>
+		
+		<div class="box box2">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

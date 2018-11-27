@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				height: 100%;
+			}
+			body{
+				display: flex;
+				flex-direction: column;
+			}
+			header{
+				height: 50px;
+				background: #666666;
+			}
+			.box{
+				background: yellow;
+				flex: 1;
+				display: flex;
+			}
+			.box nav{
+				width: 190px;
+				background: #8fbad9;
+			}
+			.box main{
+				background: #d6d6d6;
+				flex: 1;
+			}
+			.box aside{
+				width: 190px;
+				background: #e46e51;
+			}
+			footer{
+				height: 50px;
+				background: #666666;
+			}
+		</style>
+	</head>
+	<body>
+		<header>header</header>
+		<div class="box">
+			<nav>nav</nav>
+			<main>main</main>
+			<aside>aside</aside>
+		</div>
+		<footer>footer</footer>
+	</body>
+</html>

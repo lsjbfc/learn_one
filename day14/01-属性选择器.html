@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*a[class]{
+				background: red;
+			}*/
+			/*a[href="#"]{
+				background: red;
+			}*/
+			/*div[class~="box9"]{
+				background: orange;
+			}*/
+			
+			a[href^="a"]{
+				background: pink;
+			}
+			div[class*="2"]{
+				background: orangered;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http" title="百度一下，你就知道" class="box">百度</a>
+		<a href="javascript">百度</a>
+		<a href="a.php" title="百度一下，你就知道" class="box">百度</a>
+		<a href="#" title="百度一下，你就知道" class="box">百度</a>
+		
+		
+		<div class="box box1 box2">哈哈哈哈！马上五一了</div>
+		<div class="box box3 box2">哈哈哈哈！马上五一了</div>
+		<div class="box9 box4 box5">哈哈哈哈！马上五一了</div>
+		<div class="box7 box6">哈哈哈哈！马上五一了</div>
+		<div class="box box1 box2">哈哈哈哈！马上五一了</div>
+		
+		
+	</body>
+</html>

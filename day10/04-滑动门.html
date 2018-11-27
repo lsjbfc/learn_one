@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	ul{
+		width:800px;
+		height:100px;
+		background:#fff1c0;
+		margin:50px auto;
+		}
+	ul li{
+		list-style:none;
+		float:left;
+		font-size:12px;
+		margin-right:1px;
+		}
+	ul li a{
+		text-decoration:none;
+		color:black;
+		display:block;
+		height:27px;
+		/*背景显示原则*/
+		background:url(images/left.gif);
+		}
+	ul li a span{
+		display:block;
+		height:27px;
+		padding:0 20px;
+		line-height:27px;
+		background:url(images/right.gif) no-repeat right 0;
+		}
+	ul li:nth-child(1) a{
+		background-position:0 -27px;
+		color:white;
+		}
+	ul li:nth-child(1) a span{
+		background-position:right -27px;
+		}
+	ul li:nth-child(2):hover a{
+		background-position:0 -57px;
+		color:white;
+		}
+	ul li:nth-child(2):hover a span{
+		background-position:right -57px;
+		}
+	ul li:nth-child(3):hover a{
+		background-position:0 -87px;
+		color:white;
+		}
+	ul li:nth-child(3):hover a span{
+		background-position:right -87px;
+		}
+</style>
+</head>
+
+<body>
+<ul>
+	<li><a href="#"><span>首页</span></a></li>
+    <li><a href="#"><span>数码通讯</span></a></li>
+    <li><a href="#"><span>房产</span></a></li>
+</ul>
+</body>
+</html>

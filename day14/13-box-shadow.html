@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				background: #C1C1C1;
+			}
+			.box{
+				width: 800px;
+				height: 350px;
+				border: 1px solid red;
+				margin: 50px auto;
+			}
+			.box div{
+				width: 200px;
+				height: 300px;
+				float: left;
+				margin: 20px;
+				box-shadow: 5px 5px 20px black,10px 10px 30px pink;
+			}
+			.box div:first-child{
+				background: red;
+			}
+			.box div:nth-child(2){
+				background: orange;
+			}
+			.box div:last-child{
+				background: yellow;
+			}
+			/*.box div:hover{
+				
+				margin-top: 2px;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				text-align: center;
+				margin: 20px 0;
+				color: red;
+			}
+			.box{
+				width: 800px;
+				height: 400px;
+				margin: 20px auto;
+				border: 1px solid red;
+				display: flex;
+			}
+			.box div{
+				width: 100px;
+				height: 100px;
+				background: yellow;
+				border-radius:50% ;
+				text-align: center;
+				line-height: 100px;
+			}
+			.box div:nth-child(3){
+				flex-shrink: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<p>flex-shrink 设置为0时，不会随着可用空间进行比例缩放</p>
+		<div class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+			<div>7</div>
+			<div>8</div>
+			<div>9</div>
+			<div>10</div>
+			<div>11</div>
+			<div>12</div>
+			<div>13</div>
+			<div>14</div>
+			<div>15</div>
+			<div>16</div>
+			<div>17</div>
+			<div>18</div>
+			<div>19</div>
+			<div>20</div>
+		</div>
+	</body>
+</html>

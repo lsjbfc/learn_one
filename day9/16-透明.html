@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	div{
+		width:200px;
+		height:200px;
+		background:black;
+		opacity:0.5; /*.5 == 0.5*/
+		/*兼容写法*/
+		filter:alpha(opacity=50);
+		}
+</style>
+</head>
+
+<body>
+<!--IE浏览器写法：filter:alpha(opacity=value);取值范围 1-100
+兼容其他浏览器写法：opacity:0.value;(value的取值范围
+0-1 0.1,0.2,0.3-----0.9---1)-->
+<div></div>
+</body>
+</html>

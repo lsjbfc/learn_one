@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				border: 10px dashed red;
+				float: left;
+				margin: 50px;
+				text-align:center;
+				line-height: 300px;
+				padding: 20px;
+				background: greenyellow;
+			}
+			div:first-child{
+				background-clip:border-box ;
+			}
+			div:nth-child(2){
+				background-clip:padding-box ;
+			}
+			div:nth-child(3){
+				background-clip:content-box ;
+			}
+		</style>
+	</head>
+	<body>
+		<div>border-box</div>
+		<div>padding-box</div>
+		<div>content-box</div>
+	</body>
+</html>

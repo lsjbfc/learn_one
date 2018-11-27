@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				width: 200px;
+				height: 300px;
+				margin: 0 auto;
+			}
+			ul li{
+				width: 200px;
+				height: 300px;
+				border: 1px solid red;
+				list-style: none;
+				margin: 80px 0;
+				perspective: 500px;
+			}
+			ul li img{
+				width: 200px;
+				height: 300px;
+			}
+			ul li:first-child img{
+				transform: rotateX(45deg);
+			}
+			ul li:nth-child(2) img{
+				transform: rotateY(45deg);
+			}
+			ul li:last-child img{
+				transform: rotateZ(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			1、x轴旋转 上下
+			2、y轴旋转 左右
+			3、z轴旋转 转圈圈
+			deg表示度数
+		-->
+		<ul>
+			<li><img src="images/m1.jpg"/></li>
+			<li><img src="images/m2.jpg"/></li>
+			<li><img src="images/m3.jpg"/></li>
+		</ul>
+	</body>
+</html>

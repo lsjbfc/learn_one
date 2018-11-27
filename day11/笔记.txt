@@ -1,0 +1,29 @@
+﻿
+一、visibility:hidden/visible;隐藏/可见（记忆）
+
+visibility:hidden;和display:none;相同点都是隐藏显示的区域
+
+visibility:hidden;和display:none;的区别：
+
+visibility:hidden;属性会使对象不可见，但该对象在网页所占的空间没有改变，等
+于留出了一块空白区域，而 display:none属性会使这个对象彻底消失。
+
+二、浏览器内核（必须记住）
+•Trident （MSHTML） 
+•Gecko 
+•Presto 
+•Webkit 
+•Blink 
+
+三、为什么会出现浏览器兼容问题？
+
+由于各大主流浏览器由不同的厂家开发，所用的核心架构和代码也很难重和，这就为各种莫名其妙的Bug(代码错误）提供了温床。再加上各大厂商出于自身利益考虑而设置的种种技术壁垒，都让CSS应用起来比想象得要麻烦。浏览器的兼容问题是我们必须去克服的。
+
+四、css优先级计算
+
+important>内联>内部和外部（书写顺序有关）
+important>内联>id>class>类型
+
+五、在ie6下怎么定义1px高度？
+
+推荐使用方法：overflow：hidden;

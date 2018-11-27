@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body{
+				background: #cccccc;
+			}
+			.box{
+				width: 915px;
+				height: 615px;
+				border: 5px solid white;
+				margin: 20px auto;
+			}
+			.box .head{
+				height: 80px;
+				background: #f47d31;
+			}
+			.box .wrap{
+				height: 445px;
+				background: #888888;
+				padding-top: 10px;
+				padding-left: 10px;
+			}
+			.box .wrap nav{
+				width: 207px;
+				height: 317px;
+				background: red;
+				float: left;
+			}
+			.box .wrap nav h3{
+				text-align: center;
+				color: white;
+			}
+			.box .wrap nav ul li{
+				list-style: none;
+				height: 52px;
+				border-bottom:2px solid white ;
+				line-height: 52px;
+				padding-left: 10px;
+			}
+			.box .wrap nav ul li a{
+				text-decoration: none;
+				color: orange;
+			}
+			.box .wrap main{
+				width: 452px;
+				height: 400px;
+				border: 1px solid red;
+				float: left;
+				margin-left: 10px;
+			}
+			.box .wrap main article:nth-child(1){
+				padding: 10px;
+				
+			}
+			.box .wrap main article:nth-child(1) header{
+				height: 30px;
+				background: #f47d31;
+			}
+			.box .wrap aside{
+				width: 190px;
+				height: 200px;
+				border: 1px solid orange;
+				float: left;
+				margin-left: 20px;
+			}
+			.box .foot{
+				height: 80px;
+				background: #f47d31;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<header class="head">Header</header>
+			<div class="wrap">
+				<nav>
+					<h3>nav</h3>
+					<ul>
+						<li><a href="#">link1</a></li>
+						<li><a href="#">link2</a></li>
+						<li><a href="#">link3</a></li>
+					</ul>
+				</nav>
+				<!--main标签标示主要内容，只能出现一次-->
+				<main>
+					<article>
+						<header></header>
+						<p></p>
+						<p></p>
+						<footer></footer>
+					</article>
+					<article>
+						<header></header>
+						<p></p>
+						<footer></footer>
+					</article>
+				</main>
+				<aside>
+					<h3>aside</h3>
+					<mark>HTML5:</mark>"Lorem ipsum dolor nunc aut nunquam sit amet, consectetur adipiscing elit. Vivamus at est eros, vel fringilla urna. Pellentesque odio rhoncus
+				</aside>
+			</div>
+			<footer class="foot">Footer</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+一、margin padding值使用不太清除
+
+margin-left/right/top/bottom  外边距，边界
+
+padding-left/right/top/bottom 内边距、补白、填充
+
+二、盒模型  组成：border、padding、margin、content（内容）
+
+padding控制内容 （文本）的时候用的最多  
+
+导航 li两边的距离使用padding撑开
+
+
+
+三、单词、语法、属性问题   属性没有记住，语法混淆
+
+分享：建议大家下去有时间，多看看口才相关的书籍（鸡汤）
+
+面试：技术50%  表达50%   没有技术的50%，连面试的机会都没有
+
+四、元素类型，根据css显示，XHTML把标签分了三大类：
+
+1、块级元素  独占一行，自上而下排列，可以设置宽和高 div、p、h1-h6、ul、li、ol、dl。。。。
+
+
+2、内联元素  横向排列的，不可以设置宽和高  span、em、i、strong、a。。
+。
+
+3、内联（行内）块元素 横向排列，可以设置宽和高 input、select、img。。
+
+
+五、p标签里面不能嵌套div标签（记忆）
+
+内联元素设置了浮动属性，可以设置宽和高。原因：脱离了标准(文档)流

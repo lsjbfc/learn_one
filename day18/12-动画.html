@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 300px;
+				border: 1px solid red;
+				margin: 50px auto;
+				background: url(images/charector.png) no-repeat;
+				animation: run .5s infinite step-start;
+			}
+			@keyframes run{
+				0%{
+					background-position:0 0;
+				}
+				14.28%{
+					background-position:-180px 0;
+				}
+				28.56%{
+					background-position:-360px 0;
+				}
+				42.84%{
+					background-position:-540px 0;	
+				}
+				57.12%{
+					background-position:-720px 0;	
+				}
+				71.4%{
+					background-position:-900px 0;	
+				}
+				85.68%{
+					background-position:-1080px 0;	
+				}
+				100%{
+					background-position:0 0;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

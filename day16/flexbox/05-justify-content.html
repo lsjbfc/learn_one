@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			p{
+				text-align: center;
+				color: red;
+				margin: 10px 0;
+			}
+			p span{
+				font-weight: bolder;
+				color: blue;
+				font-size: 20px;
+			}
+			.box{
+				width: 800px;
+				height: 800px;
+				border: 1px solid red;
+				margin: 20px auto;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				line-height: 200px;
+			}
+			.box div:first-child{
+				background: red;
+			}
+			.box div:nth-child(2){
+				background: yellow;
+			}
+			.box div:nth-child(3){
+				background: orange;
+			}
+			.box1{
+				display: flex;
+				justify-content: flex-start;
+			}
+			.box2{
+				display: flex;
+				justify-content: flex-end;
+			}
+			.box3{
+				display: flex;
+				justify-content: center;
+			}
+			.box4{
+				display: flex;
+				justify-content: space-between;
+			}
+			.box5{
+				display: flex;
+				justify-content: space-around;
+			}
+		</style>
+	</head>
+	<body>
+		<p>4、主轴对齐 justify-content 主要用来定义伸缩项目沿主轴线的对齐方式   <span>作用：控制子元素在主轴上面的位置</span></p>
+		<p>flex-start：伸缩项目向一行的起始位置靠齐</p>
+		<div class="box box1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<p>flex-end：伸缩项目向一行的结束位置靠齐</p>
+		<div class="box box2">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<p>center：伸缩项目向一行的中间位置靠齐</p>
+		<div class="box box3">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<p>space-between：伸缩项目会平均的分布在行里</p>
+		<div class="box box4">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<p>space-around：伸缩项目会平均的分布在行里，两端保留一半的空间</p>
+		<div class="box box5">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	</body>
+</html>

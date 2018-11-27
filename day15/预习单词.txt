@@ -1,0 +1,16 @@
+gradient
+linear
+ellipse
+shape
+closest
+farthest
+corner
+repeating
+ease
+timing
+translate
+scale
+rotate
+transform
+origin
+perspective

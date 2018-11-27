@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			p{
+				text-align: center;
+				margin: 20px 0;
+				color: red;
+			}
+			.box{
+				width: 800px;
+				height: 800px;
+				border: 1px solid red;
+				margin: 20px auto;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				line-height: 200px;
+			}
+			.box div:first-child{
+				background: red;
+			}
+			.box div:nth-child(2){
+				background: yellow;
+			}
+			.box div:nth-child(3){
+				background: orange;
+			}
+			
+			.box1{
+				display: flex;
+				/*侧轴*/
+				align-items: flex-start;
+			}
+			.box2{
+				display: flex;
+				align-items: flex-end;
+			}
+			.box3{
+				display: flex;
+				align-items: center;
+			}
+			
+			.box4{
+				width: 800px;
+				height: 800px;
+				border: 1px solid red;
+				margin: 20px auto;
+				display: flex;
+			}
+			.box4 div{
+				width: 200px;
+				/*height: 200px;*/
+				text-align: center;
+				/*line-height: 200px;*/
+			}
+			.box4 div:first-child{
+				background: red;
+			}
+			.box4 div:nth-child(2){
+				background: yellow;
+			}
+			.box4 div:nth-child(3){
+				background: orange;
+			}
+			
+			.box5{
+				width: 800px;
+				height: 800px;
+				border: 1px solid red;
+				margin: 20px auto;
+				display: flex;
+				align-items: baseline;
+			}
+			.box5 div{
+				width: 200px;
+				text-align: center;
+				/*height: 200px;*/
+				
+			}
+			.box5 div:first-child{
+				background: red;
+				line-height: 300px;
+			}
+			.box5 div:nth-child(2){
+				background: yellow;
+				line-height: 500px;
+			}
+			.box5 div:nth-child(3){
+				background: orange;
+				line-height: 800px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>侧轴对齐 align-items 伸缩项目行在侧轴上的对齐方式</p>
+		<p>flex-start：伸缩项目在侧轴起点边的外边距 紧靠住 该行在侧轴起始边</p>
+		<div class="box box1">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<p>flex-end：伸缩项目在侧轴终点边的外边距 紧靠住 该行在侧轴终点边</p>
+		<div class="box box2">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<p>center：伸缩项目的外边距盒 在该行的侧轴上居中放置</p>
+		<div class="box box3">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		
+		<p>stretch：伸缩项目拉伸填充整个伸缩容器</p>
+		
+		<div class="box4">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<p>baseline：伸缩项目根据伸缩项目的基线对齐</p>
+		<div class="box5">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	</body>
+</html>

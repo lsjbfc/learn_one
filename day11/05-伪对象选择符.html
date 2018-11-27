@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+			}
+			.box::after{
+				content: url(images/mm2.jpg);
+			}
+			.box1{
+				width: 300px;
+				height: 300px;
+				border: 1px solid red;
+				margin: 50px 0;
+				position: relative;
+			}
+			.box1:after{
+				content: "";
+				/*background: red;*/
+				/*border:20px solid red;*/
+				
+				/*css写三角的方法*/
+				border-left:10px solid white;
+				border-right:10px solid white ;
+				border-top:10px solid lawngreen;
+				border-bottom:10px solid white ;
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+			span{
+				border-left:10px solid white;
+				border-right:10px solid white ;
+				border-top:10px solid lawngreen;
+				border-bottom:10px solid white ;
+				position: absolute;
+				
+			}
+			p{
+				text-indent: 2em;
+			}
+			/*p::first-letter{
+				font-size: 30px;
+				color: orange;
+			}*/
+			p::first-line{
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">你好!</div>
+		<div class="box1">关于我们</div>
+		
+		<span></span>
+		
+		<p>成都泽耀广告有限公司，是目前最具商业价值的门面商铺<br/>、出租、转让信息咨询公司。公司全力打造的高效率快速的买卖、租赁、转让的信息平台，此平台为投资者开发商和市场之间架起桥梁，实现了引导创业投资与最佳销售的精密结合，本公司作为电子商务及解决方案的专业提供商以先进的技术支持建立了科学的管理运营机制和强有力市场体系，拥有资深的咨询服务人员和精英团队，同时不断发展和完善自己，完全依靠有着诚信务实和精益求精的领导核心，高素质的员工队伍以及团结拼搏的团队精神，开辟了一条适合自己的发展道路，服务为本走专业化发展之路，做出自己的品牌，是我们的经营之道，用我们的热忱服务专业化的业务知识，真诚服务于我们的每一位客户，是我们的信念。</p>
+	</body>
+</html>

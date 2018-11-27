@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			p{
+				text-align: center;
+				color: red;
+				margin: 10px 0;
+			}
+			.box{
+				width: 800px;
+				height: 400px;
+				border: 1px solid red;
+				margin: 20px auto;
+				display: flex;
+			}
+			.box div{
+				width: 200px;
+				height: 200px;
+				text-align: center;
+				line-height: 200px;
+			}
+			.box div:first-child{
+				background: red;
+				order: 1;
+			}
+			.box div:nth-child(2){
+				background: yellow;
+				order: 3;
+			
+			}
+			.box div:nth-child(3){
+				background: orange;
+				order: 2;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<p>显示顺序 order （加在子元素上）默认状态是按照标准流的顺序排列，在flexbox模型里，可以通过order改变伸缩项目的顺序</p>
+		<p>不定义order的伸缩项目会排到前面</p>
+		<div class="box">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+	</body>
+</html>
